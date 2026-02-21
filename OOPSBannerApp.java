@@ -1,10 +1,13 @@
 /**
- * Simple application that prints a banner message to the console.
- * <p>
- * This class contains the entry point for the OOPS banner application.
- * The main method outputs the text "OOPS" when executed.
- */
-public class OOPSBannerApp {
+ * OOPSBannerApp UC1 - OOPS Banner Display Application
+ * 
+ * This class demonstrates a simple java application that displays the Object
+ * Oriented Programming System acronym "OOPS" to the console.
+ * 
+ * @author Nishitha
+ * @version 1.0
+ *  */
+public class OOPSBannerApp { 
     public static void main(String[] args) {
         System.out.println("OOPS");
     }
