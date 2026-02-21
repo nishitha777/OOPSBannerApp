@@ -1,67 +1,46 @@
 /**
- * OOPSBannerApp UC3 - OOPS Banner Appplication memory optimization using string.join() method
+ * OOPSBannerApp UC4 - Render OOPS as banner using String Array and Loop
  * 
- * This class extends the functionality of Use Case 2 by improving the way the "OOPS" banner
- * is constructed and displayed. It focuses on enhancing code readability and effciency
- * by utilizing the String.join() method to create each line of the banner.This approach
- * overcomes the drawback of using the + operator for string concatenation, which can lead
- * to code inefficency due to the creation of multiple intermediate String Objects in memory
- * 
- * 
+ * This use case improves upon UC3 by using a String array to store banner lines
+ * and iterating through them with  a for-loop, elimating hardcoded print
+ * statements and improving modularity and resuability
+ *  
  * @author Nishitha
- * @version 3.0 
+ * @version 4.0 
  *  */
 
-// Extend use case UC2 to use String.join() method to create each line of the "OOPS" banner
-// instead of concatenating strings with the + operator. This is essentially to overcome the
-// drawback of using the + operator for string concatenation, which essentially creates 
-// multiple intermediate String objects in memory, leading to inefficiency. 
-
+// Extend the user story 3 to futhure develop the OOPS banner
+// by using String array to store the banner lines and printing them in a loop.
+// This use case improves upon UC3 by using a String array to store banner lines 
+// and iterating through them with a for-loop, eliminating hardcoded print statements 
+// and improving modularity and reusability. 
+// Each line of the banner is stored as an element in the array, 
+// and the loop iterates through the array to print each line, creating the visual effect for the message "OOPS". 
+// This approach enhances code maintainability and readability while achieving the same output as UC3.
 
 public class OOPSBannerApp { 
     // Main method to run banner display
     // Each Character represented in a 7-line format and a width of 9 characters, aligned properly
-    // Use System.println() to print each line of the OOPS banner to create
-    // the visual effect for the message "OOPS". Construct each line using
+    // Each line of the banner is stored as an element in the array and use String.join(), 
+    // and the loop iterates through the array to print each line, creating the visual effect for the message "OOPS". 
     // String.join() method for better readability and efficiency.
     // Each line corresponds to a row in the banner for the letters O, O, P, S. 
     //
     public static void main(String[] args) {
          // Line 1
-        System.out.println(
-                String.join("","   ***   " , "   ***   " , " ******  " , "  *****  ")
-        );
+        String[] bannerLines = new String[7];
+        bannerLines[0] = String.join("","   ***   " , "   ***   " , " ******  " , "  *****  ");
+        bannerLines[1] = String.join("","  **  ** " , "  **  ** " , " **   ** " , " **      ");
+        bannerLines[2] = String.join(""," **    **" , " **    **" , " **   ** " , " **      ");
+        bannerLines[3] = String.join(""," **    **" , " **    **" , " ******  " , "  *****  ");
+        bannerLines[4] = String.join(""," **    **" , " **    **" , " **      " , "       **");
+        bannerLines[5] = String.join("","  **  ** " , "  **  ** " , " **      " , " **    **");
+        bannerLines[6] = String.join("","   ***   " , "   ***   " , " **      " , "  *****  ");
 
-        // Line 2
-        System.out.println(
-                String.join("","  **  ** " , "  **  ** " , " **   ** " , " **      ")
-        );
-
-
-        // Line 3
-        System.out.println(
-                String.join(""," **    **" , " **    **" , " **   ** " , " **      ")
-        );
-
-        // Line 4
-        System.out.println(
-                String.join(""," **    **" , " **    **" , " ******  " , "  *****  ")
-        );
-
-        // Line 5
-        System.out.println(
-                String.join(""," **    **" , " **    **" , " **      " , "       **")
-        );
-
-        // Line 6
-        System.out.println(
-                String.join("","  **  ** " , "  **  ** " , " **      " , " **    **")
-        );
-
-        // Line 7
-        System.out.println(
-                String.join("","   ***   " , "   ***   " , " **      " , "  *****  ")
-        );
+        // Loop through the banner lines and print each line
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }        
 
     }
 }
