@@ -26,12 +26,11 @@ public class OOPSBannerApp {
     // String.join() method for better readability and efficiency.
     // Each line corresponds to a row in the banner for the letters O, O, P, S. 
     //
-    public static void main(String[] args) }
-        
-        
+    public static void main(String[] args) {
+
         String line1 = String.join(" ", "*****", "*****", "*****", "*****");
         String line2 = String.join(" ", "*   *", "*   *", "*   *", "*   *");
-        String line3 = String.join(" ", "*   *", "*   *", "*   *", "*");
+        String line3 = String.join(" ", "*   *", "*   *", "*   *", "*    ");
         String line4 = String.join(" ", "*   *", "*   *", "*   *", "*****");
         String line5 = String.join(" ", "*   *", "*   *", "*   *", "    *");
         String line6 = String.join(" ", "*   *", "*   *", "*   *", "*   *");
@@ -46,4 +45,3 @@ public class OOPSBannerApp {
         System.out.println(line7);
     }
 }
-                            
