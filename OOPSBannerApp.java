@@ -26,42 +26,24 @@ public class OOPSBannerApp {
     // String.join() method for better readability and efficiency.
     // Each line corresponds to a row in the banner for the letters O, O, P, S. 
     //
-    public static void main(String[] args) {
-         // Line 1
-        System.out.println(
-                String.join("","   ***   " , "   ***   " , " ******  " , "  *****  ")
-        );
+    public static void main(String[] args) }
+        
+        
+        String line1 = String.join(" ", "*****", "*****", "*****", "*****");
+        String line2 = String.join(" ", "*   *", "*   *", "*   *", "*   *");
+        String line3 = String.join(" ", "*   *", "*   *", "*   *", "*");
+        String line4 = String.join(" ", "*   *", "*   *", "*   *", "*****");
+        String line5 = String.join(" ", "*   *", "*   *", "*   *", "    *");
+        String line6 = String.join(" ", "*   *", "*   *", "*   *", "*   *");
+        String line7 = String.join(" ", "*****", "*****", "*****", "*****");
 
-        // Line 2
-        System.out.println(
-                String.join("","  **  ** " , "  **  ** " , " **   ** " , " **      ")
-        );
-
-
-        // Line 3
-        System.out.println(
-                String.join(""," **    **" , " **    **" , " **   ** " , " **      ")
-        );
-
-        // Line 4
-        System.out.println(
-                String.join(""," **    **" , " **    **" , " ******  " , "  *****  ")
-        );
-
-        // Line 5
-        System.out.println(
-                String.join(""," **    **" , " **    **" , " **      " , "       **")
-        );
-
-        // Line 6
-        System.out.println(
-                String.join("","  **  ** " , "  **  ** " , " **      " , " **    **")
-        );
-
-        // Line 7
-        System.out.println(
-                String.join("","   ***   " , "   ***   " , " **      " , "  *****  ")
-        );
-
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+        System.out.println(line4);
+        System.out.println(line5);
+        System.out.println(line6);
+        System.out.println(line7);
     }
 }
+                            
